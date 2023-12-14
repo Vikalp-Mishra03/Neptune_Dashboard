@@ -13,9 +13,11 @@ import Facebook from '../../component/home4/Facebook';
 import Sold from '../../component/sold/Sold';
 import Sales from '../../component/home4/Sales';
 import Service from '../../component/home4/Service';
-import { LiaCertificateSolid, LiaHandshakeSolid, LiaThumbsDownSolid, LiaFileInvoiceDollarSolid, LiaUserShieldSolid } from "react-icons/lia";
+import { LiaCertificateSolid, LiaHandshakeSolid, LiaThumbsDownSolid, LiaFileInvoiceDollarSolid, LiaUserShieldSolid, LiaCoinsSolid, LiaHandHoldingUsdSolid } from "react-icons/lia";
 import AddNewProject from '../../component/home4/AddNewProject';
 import OngoingTask from '../../component/home4/OngoingTask';
+import AmountDetailt from '../../component/home4/AmountDetailt';
+import DaySchedule from '../../component/home4/DaySchedule';
 
 export default function Home4() {
 
@@ -92,6 +94,31 @@ export default function Home4() {
         },
     ];
 
+
+    const AmountReport = [
+        {
+
+            AmountDetail: 'Amount Due',
+            amount: '5450.90',
+            place: 'From WS Retail',
+            paymentReport: 'Payment for next week',
+            icon: <LiaCoinsSolid />,
+            style: { backgroundColor: '#ffe1e2', color: '#e7515a' },
+            textColor: { color: '#e7515a' }
+        },
+
+        {
+
+            AmountDetail: 'Amount Recieved',
+            amount: '2450.90',
+            place: 'Milestone Completed',
+            paymentReport: 'All payment recieved',
+            icon: <LiaHandHoldingUsdSolid />,
+            style: { backgroundColor: '#e6ffbf', color: '#8dbf42' },
+            textColor: { color: '#8dbf42' }
+        },
+    ];
+
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -139,6 +166,12 @@ export default function Home4() {
 
                     <div className="flex">
                         <OngoingTask />
+                        <div className='w-33'>
+                            {AmountReport.map((cardData, index) => (
+                                <AmountDetailt key={index} {...cardData} />
+                            ))}
+                        </div>
+                        <DaySchedule />
                     </div>
 
                     <div className="flex">
