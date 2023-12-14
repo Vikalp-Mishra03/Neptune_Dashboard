@@ -1,0 +1,79 @@
+.sold {
+    padding-bottom: 25px;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 20px;
+    height: 400px;
+    width: 100%;
+
+    .best-selling {
+        margin-bottom: 1rem;
+        font-weight: 900;
+        font-size: 25px;
+        color: #009688;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .sellings {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .selling {
+                font-size: 15px;
+                font-weight: 700 !important;
+                color: #0e1726;
+
+                p {
+                    font-size: 12px;
+                    color: #888ea8;
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+        .price {
+            font-size: 12px;
+            color: #009688;
+            float: right;
+            font-weight: 500;
+        }
+    }
+    .worst-selling {
+        margin-bottom: 1rem;
+        font-weight: 900;
+        font-size: 25px;
+        color:  #e7515a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .sellings {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .selling {
+                font-size: 15px;
+                font-weight: 700 !important;
+                color: #0e1726;
+
+                p {
+                    font-size: 12px;
+                    color: #888ea8;
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+        .price {
+            font-size: 12px;
+            // color: #009688;
+            float: right;
+            font-weight: 500;
+        }
+    }
+}

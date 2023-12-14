@@ -1,0 +1,35 @@
+.bars {
+    padding-bottom: 40px;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    height: 470px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'poppins', sans-serif;
+
+    .wrapper {
+        height: 60vh;
+        position: relative;
+        padding: 20px;
+        border-radius: 8px;
+        border: none;
+        background: #fff;
+        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+
+        h5 {
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: 0px;
+            margin-bottom: 0;
+            color: #515365;
+        }
+
+        .contain {
+            padding: 25px;
+
+            .barChart {
+                margin-top: 10px;
+            }
+        }
+    }
+}

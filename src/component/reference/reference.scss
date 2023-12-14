@@ -1,0 +1,76 @@
+.reference {
+    padding-bottom: 25px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    h6 {
+        // margin: 0.5rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .box {
+        margin-bottom: 1rem;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        .containers {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5526ab;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            color: #fff;
+            height: 80px;
+            font-size: 35px;
+
+        }
+
+        .book {
+            background-color: #e2a03f;
+        }
+
+        .camera {
+            background-color: #009688;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+
+            .color3 {
+                color: #009688;
+            }
+
+            .color2 {
+                color: #e2a03f;
+            }
+
+            .price {
+                font-size: 12px;
+                padding-top: 0.25rem;
+                color: #888ea8;
+            }
+        }
+    }
+
+    .mb {
+        margin-bottom: 0;
+    }
+}

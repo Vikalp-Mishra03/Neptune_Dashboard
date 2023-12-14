@@ -1,0 +1,12 @@
+.apps {
+    display: flex;
+
+    .appsContainer {
+
+        flex: 10;
+
+        .container {
+            margin-top: 80px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.ant-message {
+  z-index: 9999999;
+}
+
+.ant-message-notice-content {
+  padding: 0;
+  .ant-message-custom-content {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    span {
+      font-weight: $semi-bold;
+      font-size: $small;
+      line-height: 20px;
+      margin-left: 8px;
+    }
+  }
+  .ant-message-error {
+    background: $fairPink;
+    span {
+      color: $red;
+    }
+  }
+  .ant-message-success {
+    background: $peppermint;
+    span {
+      color: $green;
+    }
+  }
+}

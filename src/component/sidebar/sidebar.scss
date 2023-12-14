@@ -1,0 +1,93 @@
+.sidebar {
+    background-color: #4f00de;
+    color: #fff;
+    // flex: 1;
+    width: 150px;
+    min-height: 100vh;
+
+    .top {
+        // height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        .logo {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            width: 136px;
+            justify-content: center;
+            background: #4f00de;
+            
+            a {
+                font-size: 17px;
+                line-height: 2.75rem;
+                padding: 0 0.2rem;
+                font-weight: 700;
+                color: #fff;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+        
+        .center {
+            margin-top: 85px;
+            padding-right: 15px;
+            ul {
+                list-style: none;
+                
+                li {
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    padding: 15px 16px;
+                    background: transparent;
+                    transition: all ease 0.4s;
+                    
+                    
+                    
+                    span {
+                        position: relative;
+                        cursor: pointer;
+                        a {
+                            font-size: 30px;
+                            padding: 15px 16px;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            
+                            &:hover {
+                                background: #7123ff;
+                                border-radius: 10px;
+                            }
+
+                            &.active {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: #7123ff;
+                                border-radius: 10px;
+                            }         
+                        }     
+                    }
+                }
+            }
+        }
+    }
+}
+.top::before {
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    background: #ffffff;
+    position: fixed;
+    /* right: 0px; */
+    border-top-left-radius: 20px;
+    z-index: 11;
+    border-bottom-left-radius: 20px;
+    transition: all ease 0.5s;
+    left: 130px;
+}

@@ -1,0 +1,51 @@
+.Expensetable {
+    width: 30%;
+
+    .layout-spacing {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 0;
+        max-width: 100%;
+
+        .table-responsive {
+            overflow-x: hidden;
+
+            .table-bordered {
+                border: 0;
+                width: 100%;
+                margin-bottom: 1rem;
+                color: #212529;
+                border-collapse: collapse;
+
+                th {
+                    text-transform: initial;
+                    font-weight: 500;
+                    background-color: #f3f7f9;
+                    color: #0e1726;
+                    transition: all 0.1s ease;
+                    padding: 0.75rem;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    border: 1px solid #ebedf2;
+                    text-align: center;
+                }
+
+                td {
+                    vertical-align: middle;
+                    color: #515365;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    border: 1px solid #ebedf2;
+                    padding: 0.75rem;
+                }
+
+            }
+        }
+
+        .strong {
+            color: #5526ab;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+}

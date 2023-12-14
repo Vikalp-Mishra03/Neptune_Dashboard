@@ -1,0 +1,12 @@
+.expense {
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+
+
+    .expenseSummaryTable {
+        display: flex;
+        justify-content: space-between;
+    }
+}

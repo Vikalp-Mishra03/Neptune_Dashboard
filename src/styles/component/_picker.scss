@@ -1,0 +1,113 @@
+.ant-picker {
+  &-input {
+    input {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &-suffix {
+    background: url("../../assets/icons/Calendar.svg") center;
+    border-left-color: transparent;
+    width: 24px;
+    height: 24px;
+    span {
+      display: none;
+    }
+
+    // span {
+    //   display: none;
+    // }
+  }
+  &-date-panel {
+    padding: 24px 16px;
+    width: unset;
+    .ant-picker-content {
+      border-collapse: separate;
+    }
+  }
+  &-header {
+    border-bottom-width: 0;
+    padding: 0;
+    button {
+      line-height: unset;
+    }
+    &-super-prev-btn,
+    &-super-next-btn {
+      display: none !important;
+    }
+  }
+  &-body {
+    padding: 0 !important;
+  }
+  &-content {
+    th {
+      color: $default;
+      opacity: 0.5;
+      font-weight: $semi-bold;
+      font-size: $small;
+      width: 40px !important;
+      height: 40px !important;
+      margin: 6px 0;
+      padding: 0;
+    }
+    td {
+      color: $default;
+      font-weight: $regular;
+      font-size: $small;
+      width: 40px !important;
+      height: 40px !important;
+      margin: 6px 0;
+      padding: 0;
+      &:hover {
+        background-color: rgba($primary, 0.2) !important;
+        border-radius: 50% !important;
+        .ant-picker-cell-inner {
+          background: rgba($primary, 0) !important;
+        }
+      }
+    }
+
+    .ant-picker-cell-selected {
+      background-color: $primary;
+      border-radius: 50%;
+      color: $white;
+    }
+    .ant-picker-cell-today {
+      border-radius: 50%;
+      border: 1px $primary solid;
+      .ant-picker-cell-inner {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .ant-picker-cell-disabled::before {
+      background-color: transparent;
+    }
+  }
+  &-prev-icon {
+    background: url("../../assets/icons/Arrow/Left.svg") center;
+    border-left-color: transparent;
+    width: 24px;
+    height: 24px;
+    -webkit-transform: unset;
+    transform: unset;
+    &::before {
+      display: none;
+    }
+  }
+  &-next-icon {
+    background: url("../../assets/icons/Arrow/Right.svg") center;
+    border-left-color: transparent;
+    width: 24px;
+    height: 24px;
+    -webkit-transform: unset;
+    transform: unset;
+    &::before {
+      display: none;
+    }
+  }
+  &-footer {
+    display: none;
+  }
+}

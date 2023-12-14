@@ -1,0 +1,92 @@
+.weather {
+
+
+    p {
+        text-align: right;
+    }
+
+    .widget-content {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .monthly-weather-report {
+
+            .weather-report {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+
+                .temperature-box {
+
+
+                    .temperature-box-icon {
+                        font-size: 135px;
+                        color: #e2a03f;
+                        display: flex;
+
+                        svg {
+
+                            animation: spin 20s infinite linear;
+
+                            @keyframes spin {
+                                from {
+                                    transform: rotate(0deg);
+                                }
+
+                                to {
+                                    transform: rotate(360deg);
+                                }
+
+                            }
+                        }
+                    }
+
+                    .temperature-box-content {
+                        text-align: center;
+                        margin-left: 1.5rem;
+
+                        .temp-bottom {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .weathers {
+                    width: 58.333333%;
+
+                    .monthly-weather-report {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: -15px;
+                        margin-left: -15px;
+
+                        .w-33 {
+                            width: 33.333333%;
+                        }
+
+                        .weather-icons {
+                            font-size: 45px;
+                            margin-right: 1rem;
+                            display: flex;
+                        }
+
+                        .media-body {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

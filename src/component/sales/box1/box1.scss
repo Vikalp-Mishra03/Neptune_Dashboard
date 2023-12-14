@@ -1,0 +1,69 @@
+.box1 {
+    padding-bottom: 25px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    font-family: 'poppins', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: all ease 0.5s;
+    .small-box {
+        position: relative;
+        padding: 20px;
+        border-radius: 8px;
+        border: none;
+        background: #fff;
+        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+
+        .upper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 25px;
+                display: flex;
+                padding: 10px;
+                background: #e6f0ff;
+                color: #1b55e2;
+                border-radius: 50%;
+            }
+
+            .comparison {
+                padding-top: 3px;
+                padding-bottom: 3px;
+                display: flex;
+                border-radius: 9999px;
+                color: #fff;
+                font-size: 0.75rem;
+                padding-left: 0.5rem;
+                padding-right: 0.25rem;
+                align-items: center;
+                font-weight: 500;
+                background: #8dbf42;
+            }
+        }
+
+        .lower {
+
+            .number {
+                font-size: 1.75rem;
+                color: #3b3f5c;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 17px;
+                color: #5526ab;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+      
+    }
+}

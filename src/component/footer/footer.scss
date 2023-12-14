@@ -1,0 +1,23 @@
+.footer {
+    padding: 10px 20px 10px 18px;
+    display: inline-block;
+    background: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        margin-bottom: 0;
+        color: #bfbfbf;
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 500;
+
+        a{
+            color: #a0a0a0;
+        }
+    }
+}

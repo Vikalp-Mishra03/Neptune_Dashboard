@@ -1,0 +1,68 @@
+.activ {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    height: 65vh;
+    padding-bottom: 25px;
+
+    .no {
+        font-size: 15px;
+        margin-right: 0.5rem;
+        color: #0e1726;
+        font-weight: 600;
+    }
+
+    .boc {
+        .row {
+            display: flex;
+            padding: 0 20px;
+
+            .card {}
+
+
+
+            .user {
+                display: flex;
+                flex-direction: column;
+
+                h6 {
+                    font-weight: 500;
+                    line-height: 1.2;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    color: #0e1726;
+                }
+
+                .info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+
+                    .heading {
+                        margin-bottom: 0;
+                        flex: 1;
+                    }
+                }
+
+                .progress {
+
+                    .progress-bar1 {
+                        background: linear-gradient(to right, #6918ff 0%, #5526ab 100%);
+                    }
+                    .progress-bar2 {
+                        background-image: linear-gradient(to right, #d09693 0%, #c71d6f 100%);
+                        width: 25%;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.user-info {
+    width: 100%;
+    margin-left: 50px;
+}

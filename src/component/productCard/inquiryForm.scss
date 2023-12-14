@@ -1,0 +1,27 @@
+.inquiryForm {
+    width: 33.333333%;
+
+    .widget-content {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .form-control {
+            height: auto;
+            border: 1px solid #e3e0e8;
+            color: #3b3f5c;
+            font-size: 14px;
+            padding: 8px 10px;
+            /* letter-spacing: 1px; */
+            height: calc(1.4em + 1.4rem + 2px);
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            width: 100%;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}

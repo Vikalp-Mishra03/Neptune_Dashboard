@@ -1,0 +1,159 @@
+.card {
+    padding-bottom: 25px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'poppins', sans-serif;
+
+    .wrap {
+        position: relative;
+        // padding: 20px;
+        border-radius: 8px;
+        border: none;
+        background: #fff;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+        -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+
+        .img2 {
+            position: relative;
+            background: #fff2e1;
+            padding: 20px 20px 0px;
+            overflow: hidden;
+
+            img {
+                height: 130px;
+                position: relative;
+                top: 10px;            
+            }
+
+            .data {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+                background: white;
+                padding: 10px;
+                border-radius: 20px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                span {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #e2a03f;
+                }
+
+                .progress {
+                    margin: 10px 0px 10px;
+                    height: 5px;
+                    border-radius: 16px;
+                    width: 70px;
+                    border-radius: 0;
+                    background-color: #ebedf2;
+                    box-shadow: 1px 3px 20px 3px #f1f2f3;
+                    position: relative;
+
+                    .progress-bar {
+                        width: 67%;
+                        background: #e2a03f;
+                        box-shadow: 0 2px 4px rgba(0, 69, 255, 0.15), 0 8px 16px rgba(0, 69, 255, 0.2);
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        font-weight: 100;
+                        border-color: #e2a03f;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        overflow: hidden;
+                        color: #fff;
+                        text-align: center;
+                        white-space: nowrap;
+                        transition: width .6s ease;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -60px;
+                right: -40px;
+                z-index: 0;
+                border: 60px solid rgb(253 168 53 / 25%);
+                transform: rotate(-25deg);
+                border-radius: 50%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                z-index: 0;
+                border: 25px solid rgb(253 168 53 / 25%);
+                transform: rotate(135deg);
+                border-radius: 50%;
+            }
+        }
+
+        .info-box2 {
+            position: relative;
+            padding: 20px;
+            overflow: hidden;
+
+            .card-box {
+                h3 {
+                    font-weight: 700;
+                    font-size: 19px;
+                    letter-spacing: 0px;
+                    margin-bottom: 0;
+                    color: #515365;
+                }
+
+                .date {
+                    font-size: 13px;
+                    color: #e2a03f;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            .member2 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .members {
+                    background: #e2a03f;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 4px 10px;
+                    border-radius: 15px;
+                    display: inline-block;
+                }
+
+                .member-image {
+                    display: inline-flex;
+                    margin: 0px;
+                    flex-wrap: wrap;
+
+                    img {
+                        margin-left: -0.4rem;
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

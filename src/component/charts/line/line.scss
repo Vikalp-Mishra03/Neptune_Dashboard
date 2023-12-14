@@ -1,0 +1,148 @@
+.big-chart {
+    display: flex;
+    // width: 100%;
+    font-family: 'poppins', sans-serif;
+
+    .chart {
+        padding-bottom: 25px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-family: 'poppins', sans-serif;
+        width: 900px;
+
+        .widget {
+            max-width: 100%;
+            height: 55vh;
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            border: none;
+            background: #fff;
+            box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+
+            .top {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .left {
+                    font-weight: 700;
+                    font-size: 19px;
+                    letter-spacing: 0px;
+                    margin-bottom: 0;
+                    color: #515365;
+                }
+
+                .right {
+                    position: relative;
+                    padding: 9px 15px 10px 15px;
+                    border: 1px solid #d3d3d3;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    line-height: 17px;
+                    background-color: #fff;
+                    letter-spacing: normal;
+                    min-width: 115px;
+                    text-align: inherit;
+                    color: #1b2e4b;
+                    box-shadow: none;
+                    max-height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    .option {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        position: relative;
+                        cursor: pointer;
+
+                        p {
+                            font-size: 13px;
+                            line-height: 17px;
+                            background-color: #fff;
+                            letter-spacing: normal;
+                            color: #1b2e4b;
+                        }
+
+                        .options {
+                            min-width: 11rem;
+                            border-radius: 4px;
+                            border: none;
+                            border: 1px solid #e0e6ed;
+                            z-index: 899;
+                            box-shadow: rgba(113, 106, 202, 0.2) 0px 0px 15px 1px;
+                            top: 15px;
+                            padding: 10px;
+                            position: absolute;
+                            transform: translate3d(-78px, 30px, 0px);
+                            top: 0px;
+                            left: 0px;
+
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    padding: 8px 15px;
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    color: #3b3f5c;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .price {
+                font-size: 25px;
+                font-weight: 500;
+                color: rgb(81, 83, 101);
+                ;
+            }
+
+            p {
+                font-size: 14px;
+                color: rgb(136, 142, 168);
+                font-weight: 500;
+                // margin-bottom: 40px;
+            }
+
+            .charts {
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    .round-chart {
+        padding-bottom: 25px;
+        // max-width: 33.333333%;
+        position: relative;
+        width: 35%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .widgets {
+            height: 93.7%;
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            border: none;
+            background: #fff;
+            box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+
+            .top {
+                font-weight: 700;
+                font-size: 19px;
+                letter-spacing: 0px;
+                margin-bottom: 0;
+                color: #515365;
+            }
+        }
+    }
+}

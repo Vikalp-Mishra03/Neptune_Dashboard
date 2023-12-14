@@ -1,0 +1,107 @@
+.todolist {
+    padding-right: 15px;
+    padding-left: 10px;
+    width: 50%;
+    padding-bottom: 25px;
+
+    .ic {
+        svg {
+            float: right;
+            margin-top: -50px;
+            font-weight: 900;
+            font-size: 25px;
+            color: #009688;
+        }
+    }
+
+    .inputContainer {
+        margin: 0px -20px;
+        padding: 15px 17px;
+        background: #efefef;
+
+        .form {
+            display: flex;
+            margin-bottom: 0;
+            align-items: center;
+
+            .form-control {
+                display: block;
+                width: 100%;
+                height: calc(1.5em + 0.75rem + 2px);
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #888ea8;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                margin-right: 10px;
+
+                &::placeholder {
+                    color: #888ea8;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .list-area {
+        h6 {
+            font-size: 12px;
+            color: #888ea8;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        .single-to-do {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .check {
+
+                .cbx {
+                    font-size: 14px;
+                    color: #acb0c3;
+                    letter-spacing: 1px;
+                    user-select: none;
+                    cursor: pointer;
+
+                    .light {
+                        color: #0e1726;
+                        transform: translate3d(0, 0, 0);
+                        padding-left: 8px;
+                    }
+                }
+            }
+
+            .badge {
+                color: #5526ab;
+                background-color: transparent;
+                border: 1px solid #5526ab;
+                font-weight: 600;
+                line-height: 1.4;
+                padding: 3px 6px;
+                font-size: 12px;
+                font-weight: 600;
+                transition: all 0.3s ease-out;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .area {
+        margin-bottom: 25px;
+    }
+
+    .btn1 {
+        margin-top: 1.5rem;
+    }
+}

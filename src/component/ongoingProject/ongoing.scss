@@ -1,0 +1,42 @@
+.ongoing {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%;
+    padding-bottom: 25px;
+
+    .box7 {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid;
+        border-color: #dee2e6;
+        font-size: 12px;
+
+        .primary {
+            color: #5526ab;
+            font-size: 15px;
+        }
+
+        .success {
+            float: right;
+            color: #009688;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .success1{
+            color: #e7515a;
+        }
+
+        .muted {
+            font-size: 12px;
+            margin-top: .25rem;
+            margin-bottom: .5rem;
+            color: #888ea8;
+        }
+
+        p {
+            color: #888ea8;
+            margin-bottom: 0;
+        }
+    }
+}

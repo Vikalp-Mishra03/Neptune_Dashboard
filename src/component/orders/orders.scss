@@ -1,0 +1,15 @@
+.order{
+    width: 23.333333%;
+
+    .order{
+        flex-direction: column;
+
+        .top-row{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+}

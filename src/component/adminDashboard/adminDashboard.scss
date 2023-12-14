@@ -1,0 +1,37 @@
+.boxOne {
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .col-4 {
+            flex: 0 0 33.333333%;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 33.333333%;
+
+            .media {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .align {
+            flex: 0 0 41.666667%;
+            width: 41.666667%;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            .project-info {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                gap: 85px;
+            }
+        }
+    }
+}

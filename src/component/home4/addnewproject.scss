@@ -1,0 +1,18 @@
+.addnewproject {
+
+    .background-style {
+        border: 2px dashed black;
+        display: flex;
+        height: 230px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #ddd;
+
+        input {
+            padding-left: 50px;
+            position: relative;
+            left: 25px;
+        }
+    }
+}
