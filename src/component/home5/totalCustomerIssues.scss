@@ -1,0 +1,79 @@
+.TotalCustomerIssues {
+
+    .inner {
+        .customer-issue {
+
+            .customer-issue-list {
+
+                .customer-issue-info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h6 {
+
+                        font-size: 12px;
+                        margin-bottom: 0.5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                    }
+
+                    p {
+                        // color: #5c1ac3;
+                        font-size: 12px;
+                        // color: #009688;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .color {
+                        color: #0ba360;
+                    }
+
+                    .color1 {
+                        color: #5c1ac3;
+                    }
+
+                    .color3 {
+                        color: #e2a03f;
+                    }
+
+                }
+
+                .customer-issue-stats {
+
+                    .progress {
+                        border-radius: 30px;
+                        background-color: #ebedf2;
+                        margin-bottom: 1.25rem;
+                        height: 16px;
+                        box-shadow: 1px 3px 20px 3px #f1f2f3;
+                        position: relative;
+
+                        .progress-bar {
+                            background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+                            height: 100%;
+                            width: 69%;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                            font-weight: 100;
+                            border-radius: 16px;
+                            border: 0px;
+                            position: absolute;
+                        }
+
+                        .progress1 {
+                            width: 25%;
+                            background-image: linear-gradient(to right, #7579ff 0%, #b224ef 100%);
+                        }
+
+                        .progress2 {
+                            width: 11%;
+                            background-image: linear-gradient(to right, #f09819 0%, #ff5858 100%);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
