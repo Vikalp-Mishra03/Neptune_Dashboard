@@ -195,7 +195,7 @@ svg {
 }
 
 .voilet {
-    color: #5526ab;
+    color: #5526ab !important;
 }
 
 .danger {
@@ -248,6 +248,7 @@ svg {
 .yellow {
     color: #e2a03f;
 }
+
 .bc-yellow {
     background-color: #e2a03f !important;
 }
@@ -287,6 +288,10 @@ h4 {
 
 .mt-1 {
     margin-top: 1rem;
+}
+
+.mt-70 {
+    margin-top: 70px;
 }
 
 .mb-1 {
@@ -408,6 +413,7 @@ h4 {
 .w-50 {
     width: 50%;
 }
+
 .w-25 {
     width: 25%;
 }
@@ -479,6 +485,7 @@ h4 {
 .w-140 {
     width: 140px;
 }
+
 .w-70 {
     width: 70%;
 }
@@ -496,6 +503,56 @@ h4 {
     background-color: #e2a03f;
 }
 
-.mr-1{
+.mr-1 {
     margin-right: 1rem;
+}
+
+.w-16 {
+    width: 16.666667%;
+}
+
+.paragraph {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    color: #515365;
+    font-size: 0.875rem;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.border-img {
+    border: 1px solid #515365;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.shine-gradient {
+    background-image: linear-gradient(to right, #7579ff 0%, #b224ef 100%) !important;
+}
+
+.font-13{
+    font-size: 13px;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+.mt-2{
+    margin-top: 2rem;
 }

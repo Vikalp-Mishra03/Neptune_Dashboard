@@ -19,6 +19,7 @@ import Home2 from './pages/home/Home2'
 import Sidebar from './component/sidebar/Sidebar'
 import Home3 from './pages/home/Home3'
 import Home4 from './pages/home/Home4'
+import Home5 from './pages/home/Home5'
 
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           <Route path='/home2' element={<Home2 />} />
           <Route path='/home3' element={<Home3 />} />
           <Route path='/home4' element={<Home4 />} />
+          <Route path='/home5' element={<Home5 />} />
           <Route path='/apps' element={<Apps />} />
           <Route path='/auth' element={<Auth />} />
           <Route path='/other' element={<OtherPages />} />
