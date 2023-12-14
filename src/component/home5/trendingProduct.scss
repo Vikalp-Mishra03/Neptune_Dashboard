@@ -1,0 +1,17 @@
+.trendingProduct {
+
+    img {
+        height: 3.25rem;
+        width: 3.25rem;
+    }
+
+    .big-box {
+        position: relative;
+        left: 375px;
+        display: flex;
+        justify-content: space-between;
+        top: -35px;
+        width: 210px;
+        align-items: center;
+    }
+}
