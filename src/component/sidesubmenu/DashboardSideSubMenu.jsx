@@ -27,7 +27,7 @@ export default function DashboardSideSubMenu() {
                             <NavLink to="/home4"> Dashboard 4 </NavLink>
                         </li>
                         <li>
-                            <a href="index-5.html"> Dashboard 5 </a>
+                            <NavLink to="/home5"> Dashboard 5 </NavLink>
                         </li>
                     </ul>
                     {/* <Router>
