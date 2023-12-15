@@ -544,13 +544,34 @@ h4 {
     background-image: linear-gradient(to right, #7579ff 0%, #b224ef 100%) !important;
 }
 
-.font-13{
+.font-13 {
     font-size: 13px;
 }
 
-.mt-4{
+.mt-4 {
     margin-top: 4rem;
 }
-.mt-2{
+
+.mt-2 {
     margin-top: 2rem;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.gray {
+    color: #888ea8
+}
+
+.br-0 {
+    border-radius: 0;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.ml-1{
+    margin-left: 1rem;
 }

@@ -20,7 +20,7 @@ import Sidebar from './component/sidebar/Sidebar'
 import Home3 from './pages/home/Home3'
 import Home4 from './pages/home/Home4'
 import Home5 from './pages/home/Home5'
-import Calender from './component/Apps/Calender/Calender'
+
 
 
 export default function App() {
@@ -35,7 +35,6 @@ export default function App() {
           <Route path='/home4' element={<Home4 />} />
           <Route path='/home5' element={<Home5 />} />
           <Route path='/apps' element={<Apps />} />
-          <Route path='/calender' element={<Calender />} />
           <Route path='/auth' element={<Auth />} />
           <Route path='/other' element={<OtherPages />} />
           <Route path='/basicUi' element={<BasicUi />} />

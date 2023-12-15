@@ -4,6 +4,8 @@ import Loader from '../../component/loader/Loader';
 import Navbar from '../../component/navbar/Navbar';
 
 import Footer from '../../component/footer/Footer';
+import Event from '../../component/calendar/Event';
+import MyCalendar from '../../component/calendar/MyCalendar';
 
 
 export default function Apps() {
@@ -29,9 +31,14 @@ export default function Apps() {
           <Navbar />
 
 
-     
+          <div className="flex">
+            <Event />
+            <MyCalendar />
+          </div>
 
-          
+
+
+
           <Footer />
         </div>
       )}
