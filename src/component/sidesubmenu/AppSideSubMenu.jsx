@@ -22,7 +22,7 @@ export default function AppSideSubMenu() {
                             <NavLink to='/calender'> Calender </NavLink>
                         </li>
                         <li style={{ marginLeft: '15px' }}>
-                            <NavLink to="/home2"> Chat </NavLink>
+                            <NavLink to="/chats"> Chat </NavLink>
                         </li>
 
                         <li>

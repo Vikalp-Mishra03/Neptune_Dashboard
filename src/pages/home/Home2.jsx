@@ -100,9 +100,6 @@ export default function Home2() {
     }
   ];
 
-  // const productData2 = {
-
-  // };
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -123,8 +120,6 @@ export default function Home2() {
 
           <div className='flex'>
             <PendingTask />
-
-
             <Orders orderData={orderData} />
             <Orders orderData={orderData1} />
             <Orders orderData={orderData2} />

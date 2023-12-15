@@ -76,7 +76,7 @@ export default function ToDoList() {
                     </div>
                 </div>
 
-                <a href="#" className='btn btn1' style={{marginTop:'1.5rem'}}>View full To Do App</a>
+                <a href="#" className='btn ' style={{marginTop:'1.5rem'}}>View full To Do App</a>
             </div>
         </div>
     )
