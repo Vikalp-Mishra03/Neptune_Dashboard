@@ -10,6 +10,7 @@ import { LiaElementor } from "react-icons/lia";
 import { FaWpforms, FaGlobeAmericas, FaChartPie, } from "react-icons/fa";
 import { FaTableCells, FaTableCellsLarge } from "react-icons/fa6";
 import DashboardSideSubMenu from '../sidesubmenu/DashboardSideSubMenu';
+import AppSideSubMenu from '../sidesubmenu/AppSideSubMenu';
 
 export default function Sidebar() {
 
@@ -33,6 +34,27 @@ export default function Sidebar() {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
+    const [showApp, setShowApp] = useState(false);
+    const appRef = useRef(null);
+
+    const toggleApp = () => {
+        setShowApp(!showApp);
+    };
+
+    const handleOutside = (event) => {
+        if (appRef.current && !appRef.current.contains(event.target)) {
+            setShowApp(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutside);
+        };
+    }, []);
+
     return (
         <>
             <div className="sidebar">
@@ -55,11 +77,23 @@ export default function Sidebar() {
                                     </div >
                                 }
                             </li>
-
-
                             <li>
-                                <span><NavLink to='/apps' title='Apps'><GiBulb /></NavLink></span>
+                                <span style={{ position: 'relative' }}>
+                                    <NavLink to="/apps" title="Apps" onClick={toggleApp}>
+                                        <GiBulb />
+                                    </NavLink>
+                                </span>
+                                {showApp &&
+                                    <div ref={appRef}>
+                                        <AppSideSubMenu />
+                                    </div >
+                                }
                             </li>
+
+                            {/* 
+                            <li>
+                                <span><NavLink to='' title='Apps'><GiBulb /></NavLink></span>
+                            </li> */}
 
                             <li>
                                 <span><NavLink to='auth' title='Auth Pages'><FaLock /></NavLink></span>

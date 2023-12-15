@@ -30,12 +30,6 @@ export default function DashboardSideSubMenu() {
                             <NavLink to="/home5"> Dashboard 5 </NavLink>
                         </li>
                     </ul>
-                    {/* <Router>
-                        <Routes>
-                            <Route path='/home2' element={<Home2 />} />
-                        </Routes>
-                    </Router> */}
-
                 </div>
             </div>
         </div>
