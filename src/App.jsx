@@ -21,6 +21,8 @@ import Home3 from './pages/home/Home3'
 import Home4 from './pages/home/Home4'
 import Home5 from './pages/home/Home5'
 import Chats from './pages/app/Chats'
+// import ApexChart from './pages/charts/ApexChart'
+
 
 
 export default function App() {
@@ -43,6 +45,7 @@ export default function App() {
           <Route path='/forms' element={<Forms />} />
           <Route path='/maps' element={<Maps />} />
           <Route path='/charts' element={<Charts />} />
+          {/* <Route path='/apex' element={<ApexChart />} /> */}
           <Route path='/widgets' element={<Widgets />} />
           <Route path='/tables' element={<Tables />} />
           <Route path='/datatable' element={<DataTable />} />

@@ -1,0 +1,42 @@
+.ant-tabs {
+  &-tab {
+    color: $default;
+
+    &:hover {
+      color: $default;
+    }
+
+    &-active {
+      .ant-tabs-tab-btn {
+        color: $default !important;
+        font-weight: 600 !important;
+      }
+    }
+  }
+
+  &-nav {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba($default, 0.05);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &-ink-bar {
+    background: transparent;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+      background: $primary;
+      width: 89px !important;
+      height: 3px !important;
+      transform: translateX(-50%);
+      border-radius: 8px 8px 0 0;
+    }
+  }
+}

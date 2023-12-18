@@ -11,6 +11,7 @@ import { FaWpforms, FaGlobeAmericas, FaChartPie, } from "react-icons/fa";
 import { FaTableCells, FaTableCellsLarge } from "react-icons/fa6";
 import DashboardSideSubMenu from '../sidesubmenu/DashboardSideSubMenu';
 import AppSideSubMenu from '../sidesubmenu/AppSideSubMenu';
+import ChartSideSubMenu from '../sidesubmenu/ChartSideSubMenu';
 
 export default function Sidebar() {
 
@@ -34,6 +35,7 @@ export default function Sidebar() {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
+
     const [showApp, setShowApp] = useState(false);
     const appRef = useRef(null);
 
@@ -52,6 +54,28 @@ export default function Sidebar() {
 
         return () => {
             document.removeEventListener('mousedown', handleOutside);
+        };
+    }, []);
+
+
+    const [showChart, setShowChart] = useState(false);
+    const chartRef = useRef(null);
+
+    const toggleChart = () => {
+        setShowChart(!showChart);
+    };
+
+    const handleChart = (event) => {
+        if (chartRef.current && !chartRef.current.contains(event.target)) {
+            setShowChart(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleChart);
+
+        return () => {
+            document.removeEventListener('mousedown', handleChart);
         };
     }, []);
 
@@ -113,9 +137,23 @@ export default function Sidebar() {
                             <li>
                                 <span><NavLink to='maps' title='Maps'><FaGlobeAmericas /></NavLink></span>
                             </li>
+
                             <li>
-                                <span><NavLink to='charts' title='Charts'><FaChartPie /></NavLink></span>
+                                <span style={{ position: 'relative' }}>
+                                    <NavLink to="/charts" title="Chart" onClick={toggleChart}>
+                                        <FaChartPie />
+                                    </NavLink>
+                                </span>
+                                {showChart &&
+                                    <div ref={chartRef}>
+                                        <ChartSideSubMenu />
+                                    </div >
+                                }
                             </li>
+
+                            {/* <li>
+                                <span><NavLink to='charts' title='Charts'><FaChartPie /></NavLink></span>
+                            </li> */}
                             <li>
                                 <span><NavLink to='widgets' title='Widgets'><MdWidgets /></NavLink></span>
                             </li>

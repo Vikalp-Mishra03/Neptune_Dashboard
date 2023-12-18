@@ -1,0 +1,21 @@
+.ant-collapse {
+  border: none;
+  background-color: $white;
+  border-radius: 0;
+  > .ant-collapse-item {
+    border-bottom: none;
+    > .ant-collapse-header {
+      font-weight: $semi-bold;
+      font-size: $medium2;
+      line-height: 24px;
+      padding: 16px 0;
+      padding-left: 32px;
+      > .ant-collapse-arrow {
+        left: 0;
+      }
+    }
+  }
+  &-content {
+    border-top: none;
+  }
+}

@@ -1,0 +1,114 @@
+.d {
+  &--flex {
+    display: flex !important;
+  }
+
+  &--block {
+    display: block !important;
+  }
+
+  &--none {
+    display: none !important;
+  }
+}
+
+.flex__direction {
+  &--column {
+    flex-direction: column !important;
+  }
+
+  &--row {
+    flex-direction: row !important;
+  }
+}
+
+.align__items {
+  &--center {
+    align-items: center;
+  }
+}
+
+.justify__content {
+  &--center {
+    justify-content: center;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+}
+
+.flex {
+  &--1 {
+    flex: 1 !important;
+  }
+  &--0 {
+    flex: 0 !important;
+  }
+}
+
+.position {
+  &--relative {
+    position: relative !important;
+  }
+}
+
+.visibility {
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
+.desktop__only {
+  display: block;
+}
+
+.mobile__only {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop__only {
+    display: none;
+  }
+
+  .mobile__only {
+    display: block;
+  }
+}
+
+.border {
+  border: 1px solid $line;
+  border-radius: 8px;
+  &--red {
+    border-color: red;
+  }
+}
+.border-unset {
+  border: unset;
+}
+.width-100 {
+  width: 100%;
+}
+.height-100 {
+  height: 100%;
+}
+.width-auto {
+  width: auto;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $line2;
+  &--primary {
+    background-color: $line2;
+  }
+}
+.width--100 {
+  width: 100%;
+}
+.height {
+  &--full {
+    height: 100%;
+  }
+}

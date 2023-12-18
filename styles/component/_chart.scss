@@ -1,0 +1,103 @@
+.ui-chart {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  &-wrapper {
+    background-color: $white;
+  }
+
+  &__tooltip {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -70px !important;
+    z-index: 10;
+
+    &__content {
+      background-color: $default;
+      border-radius: 8px;
+      color: $white;
+      width: 140px;
+      height: 61px;
+      padding: 8px 12px;
+
+      &__label {
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0 !important;
+      }
+
+      &__intro {
+        color: rgba($white, 0.8);
+      }
+    }
+
+    &--bar {
+      top: -4px;
+      left: 0 !important;
+
+      .ui-chart__tooltip__content {
+        width: 57px;
+        height: 32px;
+        padding: 0;
+        text-align: center;
+        margin-left: 16px;
+
+        &__label {
+          height: 32px;
+          line-height: 32px;
+        }
+
+        &::before {
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-right: 8px solid $default;
+          content: "";
+          position: absolute;
+          left: 8px !important;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+
+    &--line {
+      top: -77px;
+      left: -56px;
+
+      .ui-chart__tooltip__content {
+        &::after {
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid $default;
+          content: "";
+          position: absolute;
+          bottom: -8px;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    &__item {
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      width: 200px;
+      height: 62px;
+      border: 1px solid $border;
+      border-radius: 4px;
+    }
+  }
+}
+.ui-chart-bar {
+  height: 375px;
+}

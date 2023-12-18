@@ -1,0 +1,152 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.ant-radio {
+  &:hover,
+  &:active,
+  &:focus {
+    .ant-radio-inner {
+      border-color: $primary !important;
+    }
+  }
+
+  &-checked {
+    .ant-radio-inner {
+      border-color: $primary !important;
+      background: $white;
+
+      &::after {
+        background-color: $primary;
+        height: 10px;
+        width: 10px;
+        left: 2px;
+        top: 2px;
+        border-radius: 10px;
+      }
+    }
+    &::after {
+      border-color: $primary !important;
+    }
+  }
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+// checkbox
+.ant-checkbox-group {
+  width: 100%;
+}
+
+.ant-checkbox {
+  &-inner {
+    border-radius: 4px !important;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .ant-checkbox-inner {
+      border-color: $green !important;
+    }
+  }
+
+  &-checked {
+    .ant-checkbox-inner {
+      border-color: $green !important;
+      background: $green;
+    }
+    &::after {
+      border-color: $green !important;
+    }
+  }
+}
+
+.ant-input-group-addon {
+  background-color: $white;
+  font-weight: 600;
+}
+
+.ant-radio-group {
+  width: 100%;
+
+  .ant-radio-button-wrapper {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    margin-left: 24px;
+    border: 1px solid $border;
+
+    &:hover {
+      color: $default;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &.ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]) {
+      color: $default;
+      border: 1px solid $primary;
+    }
+  }
+}
+
+// .ant-select {
+//   &-dropdown {
+//     box-shadow:
+//       0 3px 6px -4px rgba(0, 0, 0, 0.12),
+//       0 6px 16px 0 rgba(0, 0, 0, 0.08),
+//       0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+//   }
+
+//   &-selection-item {
+//     background-color: rgba($default, 0.5) !important;
+//     color: $white;
+//     height: 24px !important;
+//     line-height: 24px !important;
+//     border: none !important;
+//     align-items: center;
+//     border-radius: 4px !important;
+//     padding-right: 8px !important;
+
+//     &-remove {
+//       background-color: rgba($color: $black, $alpha: 0.4);
+//       width: 14px;
+//       height: 14px;
+//       border-radius: 100%;
+//       display: flex !important;
+//       align-items: center;
+
+//       svg {
+//         width: 14px;
+//         height: 14px;
+
+//         path {
+//           stroke: $white;
+//         }
+//       }
+//     }
+//   }
+
+//   input {
+//     margin-left: 0 !important;
+//   }
+
+//   .ant-select-selection-placeholder {
+//     left: 16px;
+//   }
+// }
