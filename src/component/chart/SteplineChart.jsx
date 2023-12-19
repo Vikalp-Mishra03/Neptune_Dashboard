@@ -17,10 +17,7 @@ export default function SteplineChart() {
       dataLabels: {
         enabled: false
       },
-      title: {
-        text: 'Stepline Chart',
-        align: 'left'
-      },
+ 
       markers: {
         hover: {
           sizeOffset: 4
@@ -38,7 +35,7 @@ export default function SteplineChart() {
   }, []);
 
   return (
-    <div className='boxOne mt-70 w-50'>
+    <div className='boxOne w-50'>
       <div className="inner">
         <h5>Stepline Chart</h5>
         <div className="sub-heading">Current year sales</div>

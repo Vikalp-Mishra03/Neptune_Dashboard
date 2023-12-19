@@ -33,10 +33,7 @@ export default function Dashed() {
         curve: 'straight',
         dashArray: [0, 8, 5]
       },
-      title: {
-        text: 'Page Statistics',
-        align: 'left'
-      },
+
       legend: {
         tooltipHoverFormatter: function(val, opts) {
           return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
@@ -91,7 +88,7 @@ export default function Dashed() {
   }, []);
 
   return (
-    <div className='boxOne mt-70 w-50'>
+    <div className='boxOne  w-50'>
       <div className="inner">
         <h5>Dashed</h5>
         <div className="sub-heading">Page Statistics</div>

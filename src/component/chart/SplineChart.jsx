@@ -43,7 +43,6 @@ export default function SplineAreaChart() {
     const chart = new ApexCharts(document.querySelector("#chart5"), options);
     chart.render();
 
-    // Clean up chart on unmount (optional)
     return () => {
       chart.destroy();
     };
@@ -53,7 +52,7 @@ export default function SplineAreaChart() {
     <div className='boxOne w-50'>
       <div className="inner">
         <h5>Spline Area Chart</h5>
-        {/* Include a div to render the chart */}
+  
         <div id="chart5"></div>
       </div>
     </div>
