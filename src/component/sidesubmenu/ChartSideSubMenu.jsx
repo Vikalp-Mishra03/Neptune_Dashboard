@@ -18,15 +18,15 @@ export default function ChartSideSubMenu() {
                             <Link to='/chart'>  Apex Chart </Link>
                         </li>
                         <li>
-                            <NavLink to="/home2"> Chartlist Charts </NavLink>
+                            <NavLink to="/chartlist"> Chartlist Charts </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/home3"> ChartJS </NavLink>
+                            <NavLink to="/chartjs"> ChartJS </NavLink>
                         </li>
                         <li>
                             <NavLink to="/home4"> Morris Charts </NavLink>
                         </li>
-                       
+
                     </ul>
                 </div>
             </div>

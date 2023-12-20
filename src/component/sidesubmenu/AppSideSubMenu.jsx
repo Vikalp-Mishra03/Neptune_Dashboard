@@ -44,7 +44,7 @@ export default function AppSideSubMenu() {
                         </li>
 
                         <li style={{ marginLeft: '15px' }}>
-                            <NavLink to="/home2"> Contacts </NavLink>
+                            <NavLink to="/contact"> Contacts </NavLink>
                         </li>
 
                         <li>

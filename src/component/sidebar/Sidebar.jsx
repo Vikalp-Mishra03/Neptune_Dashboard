@@ -12,6 +12,8 @@ import { FaTableCells, FaTableCellsLarge } from "react-icons/fa6";
 import DashboardSideSubMenu from '../sidesubmenu/DashboardSideSubMenu';
 import AppSideSubMenu from '../sidesubmenu/AppSideSubMenu';
 import ChartSideSubMenu from '../sidesubmenu/ChartSideSubMenu';
+import AuthPageSidesubpage from '../sidesubmenu/AuthPageSidesubpage';
+import BasicUisideSubMenubar from '../sidesubmenu/BasicUisideSubMenubar';
 
 export default function Sidebar() {
 
@@ -79,6 +81,52 @@ export default function Sidebar() {
         };
     }, []);
 
+
+
+    const [showAuth, setShowAuth] = useState(false);
+    const authRef = useRef(null);
+
+    const toggleAuth = () => {
+        setShowAuth(!showAuth);
+    };
+
+    const handleAuth = (event) => {
+        if (authRef.current && !authRef.current.contains(event.target)) {
+            setShowAuth(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleAuth);
+
+        return () => {
+            document.removeEventListener('mousedown', handleAuth);
+        };
+    }, []);
+
+
+    const [showUi, setShowUi] = useState(false);
+    const uiRef = useRef(null);
+
+    const toggleUi = () => {
+        setShowUi(!showUi);
+    };
+
+    const handleUi = (event) => {
+        if (uiRef.current && !uiRef.current.contains(event.target)) {
+            setShowUi(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleUi);
+
+        return () => {
+            document.removeEventListener('mousedown', handleUi);
+        };
+    }, []);
+
+
     return (
         <>
             <div className="sidebar">
@@ -91,7 +139,7 @@ export default function Sidebar() {
                         <ul>
                             <li>
                                 <span style={{ position: 'relative' }}>
-                                    <NavLink to="/" title="Dashboard" onClick={toggleDashboard}>
+                                    <NavLink to="/home" title="Dashboard" onClick={toggleDashboard}>
                                         <MdOutlineHome />
                                     </NavLink>
                                 </span>
@@ -101,6 +149,7 @@ export default function Sidebar() {
                                     </div >
                                 }
                             </li>
+
                             <li>
                                 <span style={{ position: 'relative' }}>
                                     <NavLink to="/apps" title="Apps" onClick={toggleApp}>
@@ -114,20 +163,41 @@ export default function Sidebar() {
                                 }
                             </li>
 
-                            {/* 
                             <li>
-                                <span><NavLink to='' title='Apps'><GiBulb /></NavLink></span>
-                            </li> */}
-
-                            <li>
-                                <span><NavLink to='auth' title='Auth Pages'><FaLock /></NavLink></span>
+                                <span style={{ position: 'relative' }}>
+                                    <NavLink to="/home" title="Auth Pages" onClick={toggleAuth}>
+                                        <FaLock />
+                                    </NavLink>
+                                </span>
+                                {showAuth &&
+                                    <div ref={authRef}>
+                                        <AuthPageSidesubpage />
+                                    </div >
+                                }
                             </li>
+                            {/* <li>
+                                <span><NavLink to='auth' title='Auth Pages'><FaLock /></NavLink></span>
+                            </li> */}
                             <li>
                                 <span><NavLink to='other' title='Other Pages'><IoDocumentOutline /></NavLink></span>
                             </li>
+
                             <li>
-                                <span><NavLink to='basicUi' title='Basic UI'><PiCompassToolBold /></NavLink></span>
+                                <span style={{ position: 'relative' }}>
+                                    <NavLink to="/home" title='Basic UI' onClick={toggleUi}>
+                                        <PiCompassToolBold />
+                                    </NavLink>
+                                </span>
+                                {showUi &&
+                                    <div ref={uiRef}>
+                                        <BasicUisideSubMenubar />
+                                    </div >
+                                }
                             </li>
+
+                            {/* <li>
+                                <span><NavLink to='basicUi' title='Basic UI'><PiCompassToolBold /></NavLink></span>
+                            </li> */}
                             <li>
                                 <span><NavLink to='UiElement' title='UI Elements'><LiaElementor /></NavLink></span>
                             </li>
