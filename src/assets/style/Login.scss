@@ -1,0 +1,307 @@
+body {
+    overflow-y: hidden;
+
+
+    .cont {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+
+        .login-one {
+            height: 100vh;
+            background-image: url('../../component/assets/auth_1_bg.jpg');
+            background-size: cover;
+
+            .login-one-container {
+                height: 100%;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+
+                .padding {
+                    // padding: 20px 10px 20px 20px;
+                    // height: 100% !important;
+
+
+                    .main-login-one {
+                        box-shadow: 0px 0px 20px 10px rgba(45, 45, 45, 0.28);
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: -15px;
+                        margin-left: -15px;
+                        height: 100%;
+
+                        .col0 {
+                            width: 33.333333%;
+                            margin: auto;
+
+                            .login-one-start {
+                                background: #ffffff;
+                                padding: 50px;
+                                height: 100%;
+
+                                h6 {
+                                    font-size: 20px;
+                                    color: #5526ab;
+                                    text-align: center;
+                                    margin-top: 0.5rem;
+                                    margin-bottom: 0.5rem;
+                                    font-weight: 500;
+                                    line-height: 1.2;
+                                }
+
+                                p {
+                                    color: #888ea8;
+                                    text-align: center;
+                                    margin-bottom: 1rem;
+                                    margin-top: 1rem;
+                                }
+
+                                .input-one-inputs {
+                                    position: relative;
+                                    width: 100%;
+                                    margin-top: 1rem;
+
+                                    .input {
+                                        border: 1px solid #e2e1e1;
+                                        padding: 8px 33px;
+                                        width: 100%;
+                                        border-radius: 0.17rem;
+                                        transition: all ease 0.2s;
+                                        overflow: visible;
+
+                                        &:focus {
+                                            outline: none;
+                                        }
+                                    }
+
+                                    svg {
+                                        position: absolute;
+                                        font-size: 19px;
+                                        color: #c5c3c3;
+                                        top: 9px;
+                                        left: 5px;
+                                        font-weight: 900;
+                                    }
+
+                                    .cbx {
+                                        margin: auto;
+                                        -webkit-user-select: none;
+                                        user-select: none;
+                                        cursor: pointer;
+
+                                        input {
+                                            position: relative;
+                                            width: 18px;
+                                            height: 18px;
+                                            border-radius: 3px;
+                                            transform: scale(1);
+                                            vertical-align: middle;
+                                            border: 1px solid #9098A9;
+                                            transition: all 0.2s ease;
+                                        }
+
+                                        span {
+                                            padding-left: 8px;
+                                            font-size: 13px;
+                                            color: #888ea8;
+                                        }
+                                    }
+
+                                    label {
+                                        font-size: 14px;
+                                        color: #acb0c3;
+                                        letter-spacing: 1px;
+                                    }
+
+                                    .ripple-button {
+                                        width: 100%;
+                                        padding: 0.6375rem 1.25rem;
+                                        border-radius: 0.17rem;
+                                        box-shadow: 0px 2px 10px 1px #c3c3c3;
+                                        background-color: #5526ab !important;
+                                        text-shadow: 2px 2px 0 #5526ab;
+                                        position: relative;
+                                        display: inline-block;
+                                        padding: 0.4375rem 1.25rem;
+                                        margin: 0;
+                                        vertical-align: middle;
+                                        overflow: visible;
+                                        color: #fff;
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                        text-align: center;
+                                        letter-spacing: 1px;
+                                        background: transparent;
+                                        border: 0;
+                                        border-radius: 0.2rem;
+                                        user-select: none;
+                                        transition: all 0.2s ease;
+
+                                        .js-ripple {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            overflow: hidden;
+                                            background: transparent;
+
+                                            .ripple-circle {
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                -webkit-transform: translate(-50%, -50%);
+                                                transform: translate(-50%, -50%);
+                                                opacity: 0;
+                                                width: 0;
+                                                height: 0;
+                                                border-radius: 50%;
+                                                background: rgba(255, 255, 255, 0.25);
+                                            }
+                                        }
+                                    }
+
+
+                                }
+
+                                .login-one-input {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    position: relative;
+                                    width: 100%;
+                                    margin-top: 1.5rem;
+
+
+                                    .social-btn {
+                                        width: 95px;
+                                        text-align: center;
+
+                                        svg {
+                                            color: #fff;
+                                            font-size: 0.875rem;
+                                        }
+
+                                        .fb-btn {
+                                            display: block;
+                                            padding: 7px;
+                                            background: #3a589a;
+                                            border-radius: 4px;
+                                            color: #515365;
+                                            outline: none;
+                                            text-decoration: none;
+                                        }
+
+                                        .twitter-btn {
+                                            display: block;
+                                            padding: 7px;
+                                            background: #4099ff;
+                                            border-radius: 4px;
+                                        }
+
+                                        .google-btn {
+                                            display: block;
+                                            padding: 7px;
+                                            background: #e9544f;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .col1 {
+                            padding: 0;
+                            display: block;
+
+                            .half-slider {
+                                background: rgba(255, 255, 255, 0.26);
+                                height: 100vh;
+                                padding: 28px 60px;
+                                position: relative;
+
+                                .slide-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    height: 100%;
+
+                                    .top-sign-up {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        .about-comp {
+                                            width: 40%;
+                                            color: #fff !important;
+                                            margin-top: 0.5rem !important;
+                                        }
+
+                                        .for-sign-up {
+                                            width: 60%;
+                                            text-align: right;
+
+                                            p {
+                                                float: left;
+                                                width: 73%;
+                                                font-size: 12px;
+                                                color: #fff;
+                                                margin-top: 0.5rem;
+                                                margin-bottom: 0.625rem;
+                                            }
+
+                                            a {
+                                                float: left;
+                                                width: 22%;
+                                                background: transparent;
+                                                border: 1px solid #fff;
+                                                box-shadow: none;
+                                                color: #fff;
+                                                padding: 5px 4px;
+                                                margin-left: 14px;
+                                                position: relative;
+                                                top: 0px;
+                                                text-align: center;
+                                                transition: all ease 0.4s;
+                                            }
+                                        }
+                                    }
+
+                                    .carousel {
+
+                                        svg {
+                                            font-size: 45px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.forgot {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+
+.mt-4 {
+    margin-top: 2rem !important;
+}
+
+.white {
+    color: #fff;
+}
