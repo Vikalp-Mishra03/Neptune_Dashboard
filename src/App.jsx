@@ -21,6 +21,12 @@ import Home3 from './pages/home/Home3'
 import Home4 from './pages/home/Home4'
 import Home5 from './pages/home/Home5'
 import Chats from './pages/app/Chats'
+import ChartList from './pages/charts/ChartList'
+import Chartjs from './pages/charts/Chartjs'
+import Contact from './pages/app/Contact'
+import Login from './component/login/Login'
+// import BootstrapCards from './component/basicUi/BootstrapCards'
+import BootstrapCard from './pages/BasicUI/BootstrapCard'
 // import ApexChart from './pages/charts/ApexChart'
 
 
@@ -38,22 +44,24 @@ export default function App() {
           <Route path='/home5' element={<Home5 />} />
           <Route path='/apps' element={<Apps />} />
           <Route path='/chats' element={<Chats />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='/auth' element={<Auth />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/other' element={<OtherPages />} />
           <Route path='/basicUi' element={<BasicUi />} />
+          <Route path='/bootstrap' element={<BootstrapCard />} />
           <Route path='/UiElement' element={<UiElement />} />
           <Route path='/forms' element={<Forms />} />
           <Route path='/maps' element={<Maps />} />
           <Route path='/charts' element={<Charts />} />
-          {/* <Route path='/apex' element={<ApexChart />} /> */}
+          <Route path='/chartlist' element={<ChartList />} />
+          <Route path='/chartjs' element={<Chartjs />} />
           <Route path='/widgets' element={<Widgets />} />
           <Route path='/tables' element={<Tables />} />
           <Route path='/datatable' element={<DataTable />} />
           <Route path='/staterKit' element={<StaterKit />} />
           <Route path='/multiLevel' element={<MultiLevel />} />
           <Route path='/documentation' element={<Documentation />} />
-
-
         </Routes>
       </Router>
     </div>

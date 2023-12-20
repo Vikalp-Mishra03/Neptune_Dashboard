@@ -3,9 +3,11 @@ import '../home/home.scss';
 import Loader from '../../component/loader/Loader';
 import Navbar from '../../component/navbar/Navbar';
 import Footer from '../../component/footer/Footer';
+import VerticalBarChart from '../../component/chartjs/VerticalBarChart';
+import Search from '../../component/contact/Search';
 
 
-export default function Auth() {
+export default function Contact() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -23,6 +25,7 @@ export default function Auth() {
                 <div className='homeContainer'>
                     <Navbar />
 
+                    <Search />
 
                     <Footer />
                 </div>

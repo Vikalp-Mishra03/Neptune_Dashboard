@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../home/home.scss';
-import Loader from '../../component/loader/Loader';
 import Navbar from '../../component/navbar/Navbar';
+import Loader from '../../component/loader/Loader';
 import Footer from '../../component/footer/Footer';
 
-
-export default function Auth() {
+export default function BootstrapCard () {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -14,14 +13,14 @@ export default function Auth() {
         }, 2000);
         return () => clearTimeout(timeout);
     }, []);
-
     return (
-        <div className='home' style={{ width: '89%' }}>
+        <div className="home">
             {loading ? (
                 <Loader />
             ) : (
-                <div className='homeContainer'>
+                <div className="homeContainer">
                     <Navbar />
+
 
 
                     <Footer />

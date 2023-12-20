@@ -3,9 +3,10 @@ import '../home/home.scss';
 import Loader from '../../component/loader/Loader';
 import Navbar from '../../component/navbar/Navbar';
 import Footer from '../../component/footer/Footer';
+import VerticalBarChart from '../../component/chartjs/VerticalBarChart';
 
 
-export default function Auth() {
+export default function Chartjs() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -23,6 +24,9 @@ export default function Auth() {
                 <div className='homeContainer'>
                     <Navbar />
 
+                    <div className="flex w-1140 ">
+                        <VerticalBarChart />
+                    </div>
 
                     <Footer />
                 </div>

@@ -2,10 +2,17 @@ import React, { useEffect, useState } from 'react';
 import '../home/home.scss';
 import Loader from '../../component/loader/Loader';
 import Navbar from '../../component/navbar/Navbar';
+
 import Footer from '../../component/footer/Footer';
+// import AdvancedSmilAnimations from '../../component/chartList/AdvancedSmilAnimations';
 
 
-export default function Auth() {
+
+export default function ChartList() {
+
+
+
+
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -23,6 +30,10 @@ export default function Auth() {
                 <div className='homeContainer'>
                     <Navbar />
 
+                    <div className="flex w-1140">
+                        < AdvancedSmilAnimations />
+                        {/* <LineWithDataLabl /> */}
+                    </div>
 
                     <Footer />
                 </div>
